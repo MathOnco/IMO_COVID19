@@ -39,7 +39,7 @@ for(i in 1:length(unique(popData$NAME))){
     counties <- rbind(counties, data.frame(county, printablecounty, retrievablecounty))
   }
 }
-save(counties, file="../Florida_COVID19/data/FloridaCountyNames.rdata")
+save(counties, file="./ShinyApp/data/FloridaCountyNames.rdata")
 
 # Prep our age vectors
 ageVector <- c("Under 5 years", "5 to 9 years", "10 to 14 years","15 to 19 years","20 to 24 years","25 to 29 years","30 to 34 years",
@@ -63,7 +63,7 @@ for(i in 1:length(unique(popData$NAME))){
   }
 }
 colnames(peakData) <- c("County", "SEIR.peak", "SEIcIscR.peak","SEIR.peakSize","SEIcIscR.peakSize")
-save(peakData, file="../Florida_COVID19/data/peakData.rdata")
+save(peakData, file="./ShinyApp/data/peakData.rdata")
 
 # Prepare Cumulative Cases Plot
 incidenceTotals <- data.frame(matrix(NA, nrow=0, ncol=6))
@@ -90,9 +90,8 @@ allCounties$LCI <- 0
 allCounties$CumSum <- cumsum(allCounties$x)
 colnames(allCounties) <- c("Time","Cases","County","UCI","LCI","CumSum")
 incidenceTotals <- rbind(incidenceTotals, allCounties)
-save(incidenceTotals, file="../Florida_COVID19/data/incidenceTotals.rdata")
+save(incidenceTotals, file="./ShinyApp/data/incidenceTotals.rdata")
 
-ggplot(incidenceTotals, aes(x=Time, y=CumSum, color=County)) + geom_line() + guides(fill=F, color=F)
 
 
 
