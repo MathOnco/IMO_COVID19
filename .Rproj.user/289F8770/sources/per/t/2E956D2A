@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1586878188427.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1781579688",
+    "id" : "2E956D2A",
+    "lastKnownWriteTime" : 1586901462,
+    "last_content_update" : 1586901462348,
+    "path" : "~/Desktop/COVID/covid19-clean/codes/5_PrepModelOutputs.R",
+    "project_path" : "codes/5_PrepModelOutputs.R",
+    "properties" : {
+        "cursorPosition" : "58,44",
+        "scrollLine" : "23",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,9 @@
+{
+    "path" : "~/Desktop/COVID/covid19-clean",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

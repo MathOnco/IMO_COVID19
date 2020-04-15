@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1586808381147.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3020880229",
+    "id" : "2D1269B0",
+    "lastKnownWriteTime" : 1586811764,
+    "last_content_update" : 1586811764844,
+    "path" : "~/Desktop/COVID/covid19-clean/codes/3_simOutbreak_ncov_SEIR.R",
+    "project_path" : "codes/3_simOutbreak_ncov_SEIR.R",
+    "properties" : {
+        "cursorPosition" : "36,24",
+        "scrollLine" : "32",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
