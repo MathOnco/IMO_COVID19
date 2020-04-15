@@ -43,3 +43,5 @@ for(i in 1:length(unique(popData$NAME))){
     source('codes/4_simOutbreak_ncov_SEIcIscR.R')
   }
 }
+
+source('5_PrepModelOutputs.R')

@@ -69,16 +69,16 @@ epiFirstSimDurInf3 = list(epi_doNothingDurInf3 = epi_doNothingDurInf3[[1]],
                           epi_marchDurInf3 = epi_marchDurInf3[[1]],
                           epi_aprilDurInf3 = epi_aprilDurInf3[[1]])
 
-save(covid_IDurInf3,file = paste('outputs/SEIcIscR/',printablecounty,'.covid_IDurInf3.rdata', sep=""))
-save(covid_SDurInf3,file = paste('outputs/SEIcIscR/',printablecounty,'.covid_SDurInf3.rdata', sep=""))
+save(covid_IDurInf3,file = paste('./ShinyApp/data/SEIcIscR/',printablecounty,'.covid_IDurInf3.rdata', sep=""))
+save(covid_SDurInf3,file = paste('./ShinyApp/data/SEIcIscR/',printablecounty,'.covid_SDurInf3.rdata', sep=""))
 
-save(peaktime_DurInf3,file = paste('outputs/SEIcIscR/',printablecounty,'.peaktime_DurInf3.rdata', sep=""))
+save(peaktime_DurInf3,file = paste('./ShinyApp/data/SEIcIscR/',printablecounty,'.peaktime_DurInf3.rdata', sep=""))
 
-save(covid_DurInf3,file =paste('outputs/SEIcIscR/',printablecounty,'.covid_DurInf3.rdata', sep=""))
+save(covid_DurInf3,file =paste('./ShinyApp/data/SEIcIscR/',printablecounty,'.covid_DurInf3.rdata', sep=""))
 
-save(AGEcovid_IDurInf3,file =paste('outputs/SEIcIscR/',printablecounty,'.AGEcovid_IDurInf3.rdata', sep=""))
+save(AGEcovid_IDurInf3,file =paste('./ShinyApp/data/SEIcIscR/',printablecounty,'.AGEcovid_IDurInf3.rdata', sep=""))
 
-save(epiFirstSimDurInf3,file =paste('outputs/SEIcIscR/',printablecounty,'.epiFirstSimDurInf3.rdata', sep=""))
+save(epiFirstSimDurInf3,file =paste('./ShinyApp/data/SEIcIscR/',printablecounty,'.epiFirstSimDurInf3.rdata', sep=""))
 
 rm(epi_doNothingDurInf3,epi_baseDurInf3,epi_marchDurInf3,epi_aprilDurInf3)
 

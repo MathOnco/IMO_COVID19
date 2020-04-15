@@ -45,7 +45,7 @@ save(counties, file="./ShinyApp/data/FloridaCountyNames.rdata")
 ageVector <- c("Under 5 years", "5 to 9 years", "10 to 14 years","15 to 19 years","20 to 24 years","25 to 29 years","30 to 34 years",
                "35 to 39 years","40 to 44 years","45 to 49 years","50 to 54 years","55 to 59 years","60 to 64 years","65 to 69 years",
                "70 to 74 years","75 years and over")
-save(ageVector, file="../Florida_COVID19/data/AgeVector.rdata")
+save(ageVector, file="./ShinyApp/data/AgeVector.rdata")
 
 # Prepare Peak Dates
 peakData <- data.frame(matrix(NA, nrow=0, ncol=3))
@@ -55,8 +55,8 @@ for(i in 1:length(unique(popData$NAME))){
     retrievablecounty <- str_replace(str_replace(county, ' County, Florida', ''),' ','_')
     printablecounty <- str_replace(county, ' County, Florida', '')
     
-    countySEIRPeak <- readRData(paste0("./outputs/SEIR/",retrievablecounty,".peaktime_DurInf3.rdata"), retrievablecounty)
-    countySEIcIscRPeak <- readRData(paste0("./outputs/SEIcIscR/",retrievablecounty,".peaktime_DurInf3.rdata"), retrievablecounty)
+    countySEIRPeak <- readRData(paste0("./ShinyApp/data/SEIR/",retrievablecounty,".peaktime_DurInf3.rdata"), retrievablecounty)
+    countySEIcIscRPeak <- readRData(paste0("./ShinyApp/data/SEIR/",retrievablecounty,".peaktime_DurInf3.rdata"), retrievablecounty)
     if(is.na(countySEIRPeak)==FALSE & is.na(countySEIcIscRPeak)==FALSE ){
       peakData <- rbind(peakData, data.frame(printablecounty, daterange[median(countySEIRPeak[[1]]$peaktime)],daterange[median(countySEIcIscRPeak[[1]]$peaktime)], median(countySEIcIscRPeak[[1]]$peaksize), median(countySEIcIscRPeak[[1]]$peaksize)))
     }
@@ -73,8 +73,8 @@ for(i in 1:length(unique(popData$NAME))){
     retrievablecounty <- str_replace(str_replace(county, ' County, Florida', ''),' ','_')
     printablecounty <- str_replace(county, ' County, Florida', '')
     
-    countyI <- readRData(paste0("./outputs/SEIR/",retrievablecounty,".covid_IDurInf3.rdata"), retrievablecounty)
-    countyS <- readRData(paste0("./outputs/SEIR/",retrievablecounty,".covid_SDurInf3.rdata"), retrievablecounty)
+    countyI <- readRData(paste0("./ShinyApp/data/SEIR/",retrievablecounty,".covid_IDurInf3.rdata"), retrievablecounty)
+    countyS <- readRData(paste0("./ShinyApp/data/SEIR/",retrievablecounty,".covid_SDurInf3.rdata"), retrievablecounty)
     
     # countySEIcIscRPeak <- readRData(paste0("./outputs/SEIcIscR/",retrievablecounty,".peaktime_DurInf3.rdata"), retrievablecounty)
     if(is.na(countyI)==FALSE ){

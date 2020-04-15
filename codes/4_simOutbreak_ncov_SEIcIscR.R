@@ -68,16 +68,16 @@ epiFirstSimDurInf3sc = list(epi_doNothingDurInf3 = epi_doNothingDurInf3[[1]],
                             epi_marchDurInf3 = epi_marchDurInf3[[1]],
                             epi_aprilDurInf3 = epi_aprilDurInf3[[1]])
 
-save(covid_IDurInf3sc,file = 'outputs/SEIcIscR/covid_IDurInf3.rdata')
-save(covid_SDurInf3sc,file = 'outputs/SEIcIscR/covid_SDurInf3.rdata')
+save(covid_IDurInf3sc,file = './ShinyApp/data/SEIcIscR/covid_IDurInf3.rdata')
+save(covid_SDurInf3sc,file = './ShinyApp/data/SEIcIscR/covid_SDurInf3.rdata')
 
-save(peaktime_DurInf3sc,file = 'outputs/SEIcIscR/peaktime_DurInf3.rdata')
+save(peaktime_DurInf3sc,file = './ShinyApp/data/SEIcIscR/peaktime_DurInf3.rdata')
 
-save(covid_DurInf3sc,file ='outputs/SEIcIscR/covid_DurInf3.rdata')
+save(covid_DurInf3sc,file ='./ShinyApp/data/SEIcIscR/covid_DurInf3.rdata')
 
-save(AGEcovid_IDurInf3sc,file ='outputs/SEIcIscR/AGEcovid_IDurInf3.rdata')
+save(AGEcovid_IDurInf3sc,file ='./ShinyApp/data/SEIcIscR/AGEcovid_IDurInf3.rdata')
 
-save(epiFirstSimDurInf3sc,file ='outputs/SEIcIscR/epiFirstSimDurInf3.rdata')
+save(epiFirstSimDurInf3sc,file ='./ShinyApp/data/SEIcIscR/epiFirstSimDurInf3.rdata')
 
 rm(epi_doNothingDurInf3,epi_baseDurInf3,epi_marchDurInf3,epi_aprilDurInf3)
 
